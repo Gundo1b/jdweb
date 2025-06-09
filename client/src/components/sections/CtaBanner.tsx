@@ -1,15 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 
 const CtaBanner = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: "smooth",
-      });
-    }
-  };
+  const [, setLocation] = useLocation();
 
   return (
     <section className="py-12 bg-gradient-to-r from-primary to-purple-500">
@@ -20,14 +13,14 @@ const CtaBanner = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button 
-            onClick={() => scrollToSection("contact")} 
+            onClick={() => setLocation("/register")} 
             variant="default"
             className="px-8 py-4 bg-white text-primary font-medium rounded-md shadow-lg hover:bg-gray-100 transition-colors"
           >
             Get Started Today
           </Button>
           <Button 
-            onClick={() => scrollToSection("contact")} 
+            onClick={() => setLocation("/contact")} 
             variant="outline"
             className="px-8 py-4 bg-transparent text-white border-2 border-white font-medium rounded-md hover:bg-white/10 transition-colors"
           >

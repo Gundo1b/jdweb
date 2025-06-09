@@ -24,17 +24,6 @@ const Header = () => {
     setMobileMenuOpen(false);
   };
 
-  const scrollToSection = (sectionId: string) => {
-    closeMobileMenu();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <nav
       className={cn(
@@ -98,42 +87,48 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div className={`md:hidden bg-white border-t border-gray-200 ${mobileMenuOpen ? '' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <button
-            onClick={() => scrollToSection("home")}
+          <Link
+            href="/"
+            onClick={closeMobileMenu}
             className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
           >
             Home
-          </button>
+          </Link>
           <Link
             href="/services"
+            onClick={closeMobileMenu}
             className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
           >
             Services
           </Link>
-          {/* <button
-            onClick={() => scrollToSection("why-us")}
+          <Link
+            href="/About"
+            onClick={closeMobileMenu}
             className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
           >
-            Why Choose Us
-          </button>
-          <button
-            onClick={() => scrollToSection("who-can-join")}
+            About
+          </Link>
+          {/* <Link
+            href="/WhoCanJoin"
+            onClick={closeMobileMenu}
             className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
           >
             Who Can Join
-          </button> */}
-          <button
-            onClick={() => scrollToSection("contact")}
+          </Link> */}
+          <Link
+            href="/Contact"
+            onClick={closeMobileMenu}
             className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
           >
             Contact
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium bg-primary text-white hover:bg-blue-600 mt-3"
+          </Link>
+          <Link
+            href="/Register"
+            onClick={closeMobileMenu}
+            className="block w-full text-left px-3 py-2 rounded-md bg-primary text-white hover:bg-blue-600 mt-3 rounded-md font-medium"
           >
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

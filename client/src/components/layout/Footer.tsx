@@ -42,10 +42,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><button onClick={() => scrollToSection("home")} className="text-gray-300 hover:text-white transition-colors">Home</button></li>
-              <li><button onClick={() => scrollToSection("services")} className="text-gray-300 hover:text-white transition-colors">Services</button></li>
-              <li><button onClick={() => scrollToSection("About")} className="text-gray-300 hover:text-white transition-colors">About</button></li>
-              <li><button onClick={() => scrollToSection("contact")} className="text-gray-300 hover:text-white transition-colors">Contact</button></li>
+              <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
+              <li><Link href="/About" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/Contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -67,7 +67,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-3"></i>
-                <span>286 Pretorius Street, Central Towers, 5143</span>
+                <span>286 Pretorius Street, Central Towers, 514B</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone mt-1 mr-3"></i>

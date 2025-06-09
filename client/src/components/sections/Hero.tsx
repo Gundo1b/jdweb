@@ -47,7 +47,7 @@ const Hero = () => {
                 Enroll now
               </Button>
               <Button
-                onClick={() => scrollToSection("services")}
+                onClick={() => setLocation("/services")}
                 variant="outline"
                 className="px-6 py-3 bg-white text-primary border border-primary rounded-md font-medium hover:bg-gray-50 transition-colors"
               >
