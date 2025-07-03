@@ -1,16 +1,13 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 
 const Services = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: "smooth",
-      });
-    }
+  const [, setLocation] = useLocation();
+
+  const handleEnrollClick = () => {
+    setLocation("/register");
   };
 
   return (
@@ -45,7 +42,7 @@ const Services = () => {
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Regular assessments</li>
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Personalised attention</li>
               </ul>
-              <Button onClick={() => scrollToSection("contact")} className="px-6 py-3 bg-primary text-white rounded-md font-medium hover:bg-blue-600 transition-colors">
+              <Button onClick={handleEnrollClick} className="px-6 py-3 bg-primary text-white rounded-md font-medium hover:bg-blue-600 transition-colors">
                 Enquire Now
               </Button>
             </div>
@@ -67,7 +64,7 @@ const Services = () => {
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Group learning environment</li>
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Consistent progress tracking</li>
               </ul>
-              <Button onClick={() => scrollToSection("contact")} className="px-6 py-3 bg-yellow-500 text-white rounded-md font-medium hover:bg-yellow-600 transition-colors">
+              <Button onClick={handleEnrollClick} className="px-6 py-3 bg-yellow-500 text-white rounded-md font-medium hover:bg-yellow-600 transition-colors">
                 Join Saturday School
               </Button>
             </div>
@@ -89,7 +86,7 @@ const Services = () => {
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Based on learner needs</li>
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> After-school flexibility</li>
               </ul>
-              <Button onClick={() => scrollToSection("contact")} className="px-6 py-3 bg-green-500 text-white rounded-md font-medium hover:bg-green-600 transition-colors">
+              <Button onClick={handleEnrollClick} className="px-6 py-3 bg-green-500 text-white rounded-md font-medium hover:bg-green-600 transition-colors">
                 Request Extra Class
               </Button>
             </div>
@@ -111,7 +108,7 @@ const Services = () => {
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Study strategies for higher ed</li>
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Exam prep & consultation</li>
               </ul>
-              <Button onClick={() => scrollToSection("contact")} className="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors">
+              <Button onClick={handleEnrollClick} className="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors">
                 Book a Session
               </Button>
             </div>
@@ -133,7 +130,7 @@ const Services = () => {
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Small group settings</li>
                 <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Dedicated learning environment</li>
               </ul>
-              <Button onClick={() => scrollToSection("contact")} className="px-6 py-3 bg-purple-500 text-white rounded-md font-medium hover:bg-violet-600 transition-colors">
+              <Button onClick={handleEnrollClick} className="px-6 py-3 bg-purple-500 text-white rounded-md font-medium hover:bg-violet-600 transition-colors">
                 Book In-Person Class
               </Button>
             </div>
