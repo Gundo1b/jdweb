@@ -38,6 +38,9 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Dummy Bot Button */}
+         
+
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
@@ -71,7 +74,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone mt-1 mr-3"></i>
-                <span>064 905 2715</span>
+                <span>076 380 3862</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone mt-1 mr-3"></i>
