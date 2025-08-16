@@ -112,24 +112,24 @@ const Services = () => {
             </div>
           </div>
 
-          {/* In-Person Classes */}
-          <div className="bg-violet-50 rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+          {/* Final Revision Examination Workshop */}
+          <div className="bg-teal-50 rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
             <div className="p-8">
-              <div className="flex items-center justify-center w-16 h-16 bg-purple-500 rounded-full mb-4">
-                <i className="fas fa-chalkboard-teacher text-white text-2xl"></i>
+              <div className="flex items-center justify-center w-16 h-16 bg-teal-500 rounded-full mb-4">
+                <i className="fas fa-clipboard-check text-white text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">In-Person Classes</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Final Revision Examination Workshop</h3>
               <p className="text-gray-600 mb-6">
-                Prefer face-to-face learning? We offer structured contact classes with hands-on problem solving and personal mentorship.
+                Intensive workshops designed to cover the entire syllabus, focusing on key areas and exam strategies to boost your confidence.
               </p>
               <ul className="space-y-2 mb-6">
-                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Face-to-face instruction</li>
-                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Hands-on problem solving</li>
-                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Small group settings</li>
-                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Dedicated learning environment</li>
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Comprehensive syllabus coverage</li>
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Mock examinations</li>
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Time management skills</li>
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Q&A sessions with examiners</li>
               </ul>
-              <Button onClick={() => scrollToSection("contact")} className="px-6 py-3 bg-purple-500 text-white rounded-md font-medium hover:bg-violet-600 transition-colors">
-                Book In-Person Class
+              <Button onClick={() => scrollToSection("contact")} className="px-6 py-3 bg-teal-500 text-white rounded-md font-medium hover:bg-teal-600 transition-colors">
+                Register for Workshop
               </Button>
             </div>
           </div>

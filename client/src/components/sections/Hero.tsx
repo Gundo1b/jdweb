@@ -141,6 +141,19 @@ const Hero = () => {
                 Requirement: Minimum 45% average in the subject
               </div>
             </div>
+            <div className="mt-6 text-lg">
+              <p>Online Class: R600 per subject</p>
+              <p>Face-to-face Class: R750 per subject</p>
+              <p>Date: 06 October to 11 October</p>
+            </div>
+            <div className="mt-8">
+              <Button
+                onClick={() => setLocation("/register")}
+                className="px-8 py-4 bg-yellow-400 text-gray-900 rounded-md font-bold hover:bg-yellow-300 transition-colors shadow-lg"
+              >
+                Enroll Now
+              </Button>
+            </div>
           </div>
         </motion.div>
       </section>

@@ -26,7 +26,48 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Matric Upgrade */}
+          {/* Final Revision Examination Workshop */}
+          <div className="bg-red-50 rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+            <div className="p-8">
+              <div className="flex items-center justify-center w-16 h-16 bg-red-600 rounded-full mb-4">
+                <i className="fas fa-graduation-cap text-white text-2xl"></i>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Final Revision Examination Workshop</h3>
+              <p className="text-gray-600 mb-6">
+                <strong>Grades 10-12: Supercharge Your Exam Prep!</strong>
+              </p>
+              
+              <div className="mb-6">
+                <h4 className="font-semibold text-gray-800 mb-3">Featured Subjects:</h4>
+                <ul className="space-y-2">
+                  <li><i className="fas fa-calculator text-red-500 mr-2"></i> Mathematics/Mathematical Literacy</li>
+                  <li><i className="fas fa-atom text-red-500 mr-2"></i> Physics</li>
+                  <li><i className="fas fa-chart-line text-red-500 mr-2"></i> Accounting</li>
+                  <li><i className="fas fa-dna text-red-500 mr-2"></i> Life Science</li>
+                </ul>
+              </div>
+
+              <div className="bg-red-100 p-4 rounded-lg mb-6">
+                <p className="text-red-800 font-medium">
+                  <i className="fas fa-info-circle mr-2"></i>
+                  Requirement: Minimum 45% average in the subject
+                </p>
+              </div>
+
+              <ul className="space-y-2 mb-6">
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Intensive exam preparation</li>
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Past paper practice sessions</li>
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Expert exam techniques</li>
+                <li><i className="fas fa-check-circle text-green-500 mr-2"></i> Confidence building strategies</li>
+              </ul>
+              
+              <Button onClick={handleEnrollClick} className="px-6 py-3 bg-red-600 text-white rounded-md font-medium hover:bg-red-700 transition-colors">
+                Register for Workshop
+              </Button>
+            </div>
+          </div>
+
+           {/* Matric Upgrade */}
           <div className="bg-blue-50 rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
             <div className="p-8">
               <div className="flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
@@ -115,7 +156,7 @@ const Services = () => {
           </div>
 
           {/* In-Person Classes */}
-          <div className="bg-violet-50 rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
+          {/* <div className="bg-violet-50 rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
             <div className="p-8">
               <div className="flex items-center justify-center w-16 h-16 bg-purple-500 rounded-full mb-4">
                 <i className="fas fa-chalkboard-teacher text-white text-2xl"></i>
@@ -134,13 +175,14 @@ const Services = () => {
                 Book In-Person Class
               </Button>
             </div>
-          </div>
-          
+          </div> */}
+
+         
+
         </div>
       </div>
       <Footer/> 
-      </>
-    
+      </>    
   );
 };
 
